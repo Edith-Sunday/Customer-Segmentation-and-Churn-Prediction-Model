@@ -23,7 +23,6 @@ print(churn_rate)
 print(churn_df.info())
 
 # One Hot Encoding for categorical variables
-# Optional: if you are familiar with date and time manipulation, try working with the registration_event column to see if it improves your modeling
 churn_df = pd.get_dummies(churn_df, columns=['telecom_partner', 'gender', 'state', 'city', 'registration_event'])
 
 # Feature Scaling
@@ -64,3 +63,4 @@ print(classification_report(y_test, rf_pred))
 # Which accuracy score is higher? Ridge or RandomForest
 
 higher_accuracy = "RandomForest"
+
