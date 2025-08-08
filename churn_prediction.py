@@ -7,7 +7,6 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, confusion_matrix
 
-# Start your code here!
 
 # Load data
 telco_demog = pd.read_csv('telecom_demographics.csv')
@@ -63,4 +62,5 @@ print(confusion_matrix(y_test, rf_pred))
 print(classification_report(y_test, rf_pred))
 
 # Which accuracy score is higher? Ridge or RandomForest
+
 higher_accuracy = "RandomForest"
